@@ -10,3 +10,5 @@ class QueueUseRate(models.Model):
     queue = models.ForeignKey(Queues, related_name='use_rate',on_delete=models.CASCADE)
 
 
+class QueueOperate(models.Model):
+    queue = models.ForeignKey(Queues, related_name='operate', on_delete=models.CASCADE)
